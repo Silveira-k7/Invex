@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: invex-digital-flow
+    runtime: static
+    buildCommand: echo "Static site ready"
+    staticPublishPath: public
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
